@@ -5,6 +5,7 @@
 ## 核心认知
 
 - [[decoder-dominance|Decoder 主导时代的成因]]
+- [[scaling-laws|Scaling Laws]] — 规模与性能的幂律关系
 
 ## 架构类型
 

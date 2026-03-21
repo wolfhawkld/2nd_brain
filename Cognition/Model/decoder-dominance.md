@@ -84,7 +84,7 @@ Encoder 仍有价值：
 
 ## 相关认知
 
-- [[scaling-laws|Scaling Laws]]
+- [[scaling-laws|Scaling Laws]] — Decoder 是实现 scaling law 最简洁的架构
 - [[emergent-abilities|涌现能力]]
 - [[attention-mechanism|注意力机制]]
 
