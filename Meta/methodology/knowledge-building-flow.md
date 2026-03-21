@@ -32,7 +32,13 @@ Outis 职责：
 - 更新父级 MOC（Map of Content）
 - Git commit
 
-### 5. 延伸建议
+### 5. 同步到 Windows
+更新后自动同步到 Windows：
+```bash
+cp -r ~/.openclaw/workspace/2nd_brain/* /mnt/d/c/Users/DXM/Documents/2nd_brain/
+```
+
+### 6. 延伸建议
 生成后，Outis 可建议：
 - 相关但尚未创建的知识点
 - 需要补充的背景知识
