@@ -2,7 +2,7 @@
 
 ## 核心方法论
 
-（待填充）
+- [[knowledge-building-flow|知识构建流程]] — 2nd Brain 标准化生产流程
 
 ## 知识管理方法
 - PARA 方法
