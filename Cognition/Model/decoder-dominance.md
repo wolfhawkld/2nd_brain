@@ -84,6 +84,7 @@ Encoder 仍有价值：
 
 ## 相关认知
 
+- [[transformer-evolution|Transformer 架构演化]] — 历史脉络：从 Encoder-Decoder 到 Decoder-only
 - [[scaling-laws|Scaling Laws]] — Decoder 是实现 scaling law 最简洁的架构
 - [[emergent-abilities|涌现能力]] — 大规模 decoder 展现出 encoder 难以具备的能力
 - [[attention-mechanism|注意力机制]]
