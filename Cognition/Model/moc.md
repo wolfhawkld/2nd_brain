@@ -6,6 +6,7 @@
 
 - [[decoder-dominance|Decoder 主导时代的成因]]
 - [[scaling-laws|Scaling Laws]] — 规模与性能的幂律关系
+- [[emergent-abilities|涌现能力]] — 规模超过阈值后突然出现的能力
 
 ## 架构类型
 
