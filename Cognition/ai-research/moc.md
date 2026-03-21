@@ -1,6 +1,4 @@
-# MOC: 研究方向
-
-Map of Content - Damon 的研究线索
+# MOC: AI 研究
 
 ## 核心研究方向
 
@@ -17,14 +15,20 @@ Map of Content - Damon 的研究线索
 - 哲学思考
 - 实践探索
 
-## 相关笔记
-- [[KG-RAG 研究]]
-- [[A2A 协议设计]]
-- [[OpenClaw 使用经验]]
+## 已完成研究
+- [[kg-rag|KG RAG 相关论文]] ✅
+
+## 进行中
+- 多 Agent 博弈实验设计
 
 ## 待整理
-- [ ] 整理 KG RAG 相关论文笔记
-- [ ] 博弈实验设计文档
+- [ ] KG RAG 论文笔记迁移
+- [ ] A2A 协议实践总结
+
+## 相关笔记
+- [[A2A 协议]]
+- [[outis-profile]]
+- [[nemo-profile]]
 
 ---
 *创建: 2026-03-21*
