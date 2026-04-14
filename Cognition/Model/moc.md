@@ -30,6 +30,10 @@
 - [[正则化]] — Dropout/Weight Decay，防止过拟合
 - [[感受野]] — 卷积网络的视野范围
 
+### 推理与效率优化
+- [[flash-attention|Flash Attention]] — 分块计算 + 在线 softmax，内存 O(N^2) → O(N)
+- [[kv-cache|KV Cache]] — 缓存历史 KV，避免自回归生成时重复计算
+
 ### 表示与生成
 - [[词嵌入]] — Word2Vec/BERT，词的向量表示
 - [[扩散模型]] — 去噪生成，图像生成新范式
