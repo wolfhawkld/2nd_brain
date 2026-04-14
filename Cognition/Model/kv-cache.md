@@ -159,6 +159,27 @@ PagedAttention 天然支持高效并行采样：
 | **KV Eviction** | 丢弃不重要位置的 KV（StreamingLLM, H2O） |
 | **Prefix Caching** | 跨请求复用共享 prefix 的 KV |
 
+## KV Cache 在推理优化中的定位
+
+根据李宏毅 ML 2026 Spring 课程的整理，LLM 推理优化方法对比：
+
+| 方法 | 核心思想 | 是否改变原有 Attention | 是否需要训练模型 | 其他代价 |
+|------|---------|----------------------|----------------|---------|
+| **Flash Attention** | 少搬资料 | ✗ | ✗ | 一点额外运算+一点点烧脑 |
+| **KV Cache** | **储存已经算出来的 key 和 value** | ✗ | ✗ | **占用记忆体** |
+| Multi-query attention | 多个 query 共享 key 和 value | ✓ | ✓ | 可能明显伤害模型能力 |
+| Group-query attention | 多个 query 共享 key 和 value | ✓ | ✓ | - |
+| Multi-head Latent Attention | 压缩 key 和 value | ✓ | ✓ | - |
+| Sliding Window Attention | 改变 Attention 范围 | ✓ | ? | - |
+| Streaming LLM | - | ✓ | ? | - |
+| Pruning KV Cache | 丢弃 key 和 value | ✓ | ✗ | 可能明显伤害模型能力 |
+| Speculative Decoding | 用小模型来预言生成结果 | ✗ (理论上) | ✗ | 小模型还是需要耗费额外算力 |
+
+**KV Cache 的特点**：
+- ✅ **不改变原有 Attention 机制** — 只是缓存中间结果
+- ✅ **不需要重新训练模型** — 推理时动态启用
+- ⚠️ **代价是占用记忆体** — 长序列时显存压力大
+
 ## 总结
 
 | 技术 | 解决的问题 |
