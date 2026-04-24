@@ -6,7 +6,6 @@
 
 ## 基础算法
 
-- [[注意力机制]] — Transformer核心，Q/K/V三元组，Self-Attention并行计算
 - [[梯度下降优化]] — SGD、Adam、AdamW 等优化器基础
 - [[Muon优化器]] — 矩阵谱范数约束+Newton-Schulz正交化，比AdamW快1.35倍
 - [[学习率调度]] — Cosine、Warmup、衰减策略
