@@ -4,7 +4,7 @@
 
 ---
 
-## 基础优化
+## 基础算法
 
 - [[注意力机制]] — Transformer核心，Q/K/V三元组，Self-Attention并行计算
 - [[梯度下降优化]] — SGD、Adam、AdamW 等优化器基础
