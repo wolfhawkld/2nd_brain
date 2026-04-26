@@ -25,6 +25,7 @@
 ### 关键机制
 - [[注意力机制]] — Self-Attention/Cross-Attention，动态关注
 - [[位置编码]] — RoPE/ALiBi，为序列注入位置信息
+- [[RoPE]] — 旋转位置编码，把位置信息写入 Q/K 并在 QK 内积中产生相对位置依赖
 - [[残差连接]] — 梯度高速公路，深层网络训练关键
 - [[归一化层]] — BatchNorm/LayerNorm，稳定训练
 - [[正则化]] — Dropout/Weight Decay，防止过拟合
